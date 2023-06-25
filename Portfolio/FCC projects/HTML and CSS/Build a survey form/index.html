@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Car Rent Service</h1>
+    <p id="description">Fill in details below to complete your Car Rent request</p>
+    <form id="survey-form">
+        <div id="form-group">
+            <label for="name" id="name-label" class="input-heading">Name
+                <input type="text" id="name" required placeholder="Enter your name" class="input-bar">
+            </label>
+        </div>
+        <div id="form-group">
+            <label for="email" id="email-label" class="input-heading">Email
+                <input type="email" id="email" required placeholder="Enter your email" class="input-bar">
+            </label>
+        </div>
+        <div id="form-group">
+            <label for="number" id="number-label" class="input-heading">Age (optional)
+                <input type="number" id="number" max="100" min="18" required placeholder="Age" class="input-bar">
+            </label>
+        </div>
+        <div id="form-group">
+            <label for="dropdown" id="model" class="input-heading">Select Car model</label>
+            <select id="dropdown" class="input-bar">
+                <option value="Model a">Model a</option>
+                <option value="Model b">Model b</option>
+                <option value="Model b">Model c</option>
+            </select>
+        </div>
+        <div id="form-group">
+            <label for="description" id="desc" class="input-heading">How long would you like to rent the car?</label>
+            <label>
+                <input type="radio" name="user-recommend" id="input-radio" value="7 days"> 7 days
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="user-recommend" id="input-radio" value="14 days"> 14 days
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="user-recommend" id="input-radio" value="more than 21 days"> more than 21 days
+            </label>
+        </div>
+        <br>
+        <div id="form-group">
+            <label id="services" class="input-heading">Which of the following services would you like us to provide? (Additional charges are applied)</label>
+            <label>
+                <input type="checkbox" id="services" value="Refueling">Refueling (150 DHS)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="services" value="Tire change">Tire change (100 DHS)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="services" value="Battery change">Battery change (75 DHS)
+            </label>
+        </div>
+        <br>
+        <div id="form-group">
+            <label id="comments" class="input-heading">Additional comments:</label>
+            <br>
+            <textarea id="comments" cols="30" rows="05"></textarea>
+        </div>
+        <br>
+        <input type="submit" id="submit" value="Send request" class="submit-button">
+    </form>
+</body>

@@ -1,0 +1,119 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.header{
+    width: auto;
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.insta-icon{
+    width: 100px;
+}
+
+.tiktok-icon{
+    width: 66px;
+}
+
+.facebook-icon{
+    width: 92px;
+}
+
+.top-half{
+    margin: 0px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.top-half h2{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.top-half p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    border: 2px;
+    border-style: white;
+    border-width: auto;
+    height: 200px;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: white;
+}
+
+.under-header{
+    background-color: aliceblue;
+}
+
+.bottom-half{
+    border: 2px;
+    border-width: auto;
+    margin: 0px;
+    border-style: white;
+    height: 500px;
+    margin-top: 40px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.bottom-half:hover .img {
+    opacity: 0.3;
+}
+
+.bottom-half:hover .middle{
+    opacity: 1;
+}
+
+.text{
+  color: white;
+  font-size: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 37px;
+  padding-right: 37px;
+  background-color: #4CAF50;
+  position: fixed;
+  top: 600px;
+  right: 400px;
+}
+
+.total-img-text{
+    color: white;
+}

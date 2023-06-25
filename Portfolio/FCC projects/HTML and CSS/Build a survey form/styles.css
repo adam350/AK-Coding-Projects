@@ -1,0 +1,59 @@
+#name, #email, #number {
+    display: block;
+}
+
+#dropdown {
+    display: block;
+}
+
+#desc::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#form-group::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#services::after {
+    content: "\a";
+    white-space: pre;
+}
+
+body {
+    background-color: cadetblue;
+    font-family: ambulatoria Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    width: 500px;
+    line-height: 1.4;;
+}
+
+form {
+    background-color: #A0615F;
+    padding: 2.5rem 2.5rem;
+    border-radius: 1rem;
+    margin: auto;
+    width: 500px;
+}
+
+.submit-button {
+width: 500px;
+height: 40px;
+font-size: 25px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: beige;
+}
+
+.input-heading {
+    font-weight: bold;
+}
+
+.input-bar {
+    display: block;
+    width: 90%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid;
+    border-radius: 0.25rem;
+}
