@@ -1,36 +1,31 @@
-class attendance:
-    def __init__(self, name, form_class, studentID, ):
+class Student:
+    def __init__(self, name, student_id):
         self.name = name
-        self.form_class = form_class
-        self.studentID = studentID
+        self.student_id = student_id
+        self.attendance = []
 
-    def add_name(self, student_name):
-        self.name = student_name
+    def mark_late(self, date):
+        self.attendance.append(date)
 
-    def add_formClass(self, student_class):
-        self.form_class = student_class
+class Attendance:
+    def __init__(self):
+        self.students = []
 
-    def add_studentID(self, student_ID):
-        self.studentID = student_ID
+    def add_student(self, student):
+        self.students.append(student)
 
-person1 = attendance("Adam", "12B", 12345)
+    def mark_late(self, student_id, date):
+        for student in self.students:
+            if student.student_id == student_id:
+                student.mark_late(date)
+                print(f"{student.name} marked as late on {date}.")
+                break
+            else:
+                print(f"student with {student_id} not found.")
 
-while True:
-    action_name = input("Please enter your full name: ")
-    action_class = input("Please enter your form class: ")
-    action_ID = input("Please enter the last 5 digits of your student ID card: ")
-
-    if action_ID == "":
-        print("Error. Please enter your student ID")
-        if len(action_ID) > 5 or len(action_ID) <= 4:
-            print("Error. Invalid student ID. Please try again.")
-    elif action_name == "":
-        print("Error. Please try again.")
-    elif action_class == "":
-        print("Error. Try again.")
-    else:
-        print("Valid entry. Thank you!")
-        continue
-
-
-
+    def get_late_students(self, date):
+        late_students = []
+        for student in self.students:
+            if date in student.attendance:
+                late_students.append(student.name)
+            return late_students
