@@ -100,9 +100,9 @@ y2 = f(x2)
 Gradient = (y2 - y1) / (x2 - x1)
 b = y2 - Gradient*x2
 
-def tangent_Line(x):
+def tangentLine(x):
     return Gradient*x + b
 
 to_plot = [x1-0.9, x1, x1+0.9]
-plt.plot(to_plot, [tangent_Line[i] for i in to_plot])
+plt.plot(to_plot, [tangentLine[i] for i in to_plot])
 plt.show()
